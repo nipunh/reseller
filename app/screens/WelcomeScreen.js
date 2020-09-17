@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     buttonContainer : {
         padding: 20,
         width : "100%"
-        
     },
     background : {
         flex:1,

@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, StyleSheet, FlatList, SafeAreaView } from 'react-native'
 import ListItem from '../components/ListItem/ListItem'
+import ListItemDeleteAction from '../components/ListItemDeleteAct/ListItemDeleteAction'
 import ListItemSeperator from '../components/ListItemSeperator.js/ListItemSeperator'
 
 
@@ -32,10 +33,10 @@ export default function MessageScreen() {
                     title = {item.title}
                     subTitle = {item.description}
                     image = {item.image}
-
+                    onPress = {() => console.log("Message Selected", item)}
+                    renderRightActions = {()=> <ListItemDeleteAction onPress={()=>{console.log(item)}} /> }
                 />
                 }
-
                 ItemSeparatorComponent = {ListItemSeperator}
             />
         </View>

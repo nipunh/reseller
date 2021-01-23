@@ -12,7 +12,7 @@ const ListItemDeleteAction = ({onPress}) => {
             <View style={styles.container}> 
                 <MaterialCommunityIcons
                     name="trash-can"
-                    size={35}
+                    size={20}
                     color={colors.white}
                     />
             </View>

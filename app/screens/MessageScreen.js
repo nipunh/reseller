@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, StyleSheet, FlatList, SafeAreaView } from 'react-native'
 import ListItem from '../components/ListItem/ListItem'
 import ListItemDeleteAction from '../components/ListItemDeleteAct/ListItemDeleteAction'
@@ -7,7 +7,7 @@ import ListItemSeperator from '../components/ListItemSeperator.js/ListItemSepera
 
 export default function MessageScreen() {
 
-    const messages = [
+    const [messages, setMessage] = useState([
         {
             id : 1,
             title : 'T1',
@@ -20,7 +20,16 @@ export default function MessageScreen() {
             description : 'D2',
             image : require('../assets/couch.jpg')
         },
-    ]
+    ]);
+
+    const handleDelete = message => {
+        //Delete message from messages
+        //call the server
+
+        setMessage(messages.filter(msg => msg.id !== message.id));
+
+    }
+
 
 
     return (
@@ -34,7 +43,7 @@ export default function MessageScreen() {
                     subTitle = {item.description}
                     image = {item.image}
                     onPress = {() => console.log("Message Selected", item)}
-                    renderRightActions = {()=> <ListItemDeleteAction onPress={()=>{console.log(item)}} /> }
+                    renderRightActions = {()=> <ListItemDeleteAction onPress={()=>{handleDelete(item)}} /> }
                 />
                 }
                 ItemSeparatorComponent = {ListItemSeperator}

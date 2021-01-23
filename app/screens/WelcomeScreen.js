@@ -10,11 +10,11 @@ export default function WelcomeScreen() {
             <View style={styles.logoContainer}>
                 <Image style={styles.logo}  source={require('../assets/logo-red.png')} />
                 <AppText style={{color : "white"}}>Reseller</AppText>
-                <AppText style={{color : "white"}}>We buy what you don't need</AppText>
+                <AppText style={{color : "white"}}>Exhange books with nearby readers</AppText>
             </View> 
             <View style={styles.buttonContainer}>
-                <AppButton title="Login" onPress={()=>console.log("Hello")} />
-                <AppButton title="Register" onPress={()=>console.log("")} color="secondary" />
+                <AppButton title="Loginn" onPress={()=>console.log("Hello")} />
+                <AppButton title="Registerr" onPress={()=>console.log("")} color="secondary" />
             </View>
         </ImageBackground>
     )

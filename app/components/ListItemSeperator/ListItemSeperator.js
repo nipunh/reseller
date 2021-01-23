@@ -4,8 +4,7 @@ import colors from '../colors'
 
 export default function ListItemSeperator() {
     return (
-        <View style={styles.seperator}>
-        </View>
+        <View style={styles.seperator}></View>
     )
 }
 

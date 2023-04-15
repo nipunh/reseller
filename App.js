@@ -23,8 +23,8 @@ export default function App() {
     // <WelcomeScreen />
     // <ViewImageScreen />
     // <ListingDetailsScreens />
-    // <MessageScreen />
-    <AccountScreen />
+    <MessageScreen />
+    // <AccountScreen />
   );
 }
 

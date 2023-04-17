@@ -17,14 +17,23 @@ import Screen from "./app/components/Screen";
 import Icon from "./app/components/Icon";
 import ListItem from "./app/components/ListItem/ListItem";
 import AccountScreen from "./app/screens/AccountScreen";
+import ListScreen from "./app/screens/ListScreen";
+import AppText from "./app/components/AppText/AppText";
+import AppTextInput from "./app/components/AppTextInput";
+import AppPicker from "./app/components/AppPicker";
 
 export default function App() {
   return (
     // <WelcomeScreen />
     // <ViewImageScreen />
     // <ListingDetailsScreens />
-    <MessageScreen />
+    // <MessageScreen />
     // <AccountScreen />
+    // <ListScreen />
+    <Screen>
+      <AppPicker placeholder="Category" icon="apps"  />
+      <AppTextInput placeholder="Email" icon="email" />
+    </Screen>
   );
 }
 

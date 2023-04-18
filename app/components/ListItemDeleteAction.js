@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableWithoutFeedback } from 'react-native'
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import colors from '../colors';
+import colors from './colors';
 
 
 const ListItemDeleteAction = ({onPress}) => {

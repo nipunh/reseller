@@ -10,11 +10,12 @@ export default function WelcomeScreen({ navigation }) {
             <View style={styles.logoContainer}>
                 <Image style={styles.logo}  source={require('../assets/logo-red.png')} />
                 <AppText style={{color : "white"}}>Reseller</AppText>
-                <AppText style={{color : "white"}}>We buy what you don't need</AppText>
+                <AppText style={{color : "white"}}>Exhange books with nearby readers</AppText>
             </View> 
             <View style={styles.buttonContainer}>
                 <AppButton title="Login" onPress={()=> navigation.navigate("Login")} />
                 <AppButton title="Register" onPress={()=> navigation.navigate("Register")} />
+
             </View>
         </ImageBackground>
     )

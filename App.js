@@ -18,31 +18,10 @@ export default function App() {
 
 
   return (
-
-
     <NavigationContainer theme={navigationTheme}>
       {/* <AuthNavigator /> */}
       <AppNavigator />
     </NavigationContainer>
-
-    // <WelcomeScreen />
-    // <ViewImageScreen />
-    // <ListingDetailsScreens />
-    // <MessageScreen />
-    // <AccountScreen />
-    // <ListScreen />
-    // <Screen>
-    //   <AppPicker items={categories} placeholder="Category" icon="apps" selectedItem = {category}  onSelectItem = {item => setCategory(item)}  />
-    //   <AppTextInput placeholder="Email" icon="email" />
-    // </Screen>
-    // <LoginScreen />
-    // <ListingEditScreen />
-    // <Screen>
-    //   <ImageInput img={img} onChangeImage={img => setImg(img)} />
-    // </Screen>
-    // <Screen>
-    //   <ImageInputList imageUris={imgs} onAddImage={handleAdd} onRemoveImage={handleRemove} />
-    // </Screen>
   );
 }
 

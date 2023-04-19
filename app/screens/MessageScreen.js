@@ -27,9 +27,6 @@ export default function MessageScreen() {
   const [refreshing, setRefreshing] = useState(false);
 
   const handleDelete = (message) => {
-    //Delete message from messages
-    //call the server
-
     setMessage(messages.filter((msg) => msg.id !== message.id));
   };
 

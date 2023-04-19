@@ -1,5 +1,4 @@
-import { StatusBar } from "expo-status-bar";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   StyleSheet,
   Text,
@@ -8,33 +7,24 @@ import {
   Image,
   SafeAreaViewBase,
 } from "react-native";
-import WelcomeScreen from "./app/screens/WelcomeScreen";
-import ViewImageScreen from "./app/screens/ViewImageScreen";
-import Card from "./app/components/Card";
-import ListingDetailsScreens from "./app/screens/ListingDetailsScreens";
-import MessageScreen from "./app/screens/MessageScreen";
-import Screen from "./app/components/Screen";
-import Icon from "./app/components/Icon";
-import ListItem from "./app/components/ListItem";
-import AccountScreen from "./app/screens/AccountScreen";
-import ListScreen from "./app/screens/ListScreen";
-import AppText from "./app/components/AppText";
-import AppTextInput from "./app/components/AppTextInput";
-import AppPicker from "./app/components/AppPicker";
-import LoginScreen from "./app/screens/LoginScreen";
-import ListingEditScreen from "./app/components/ListingEditScreen";
+
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import AuthNavigator from "./app/navigation/AuthNavigator";
+import navigationTheme from "./app/navigation/navigationTheme";
+import AppNavigator from "./app/navigation/AppNavigator";
 
 export default function App() {
-  const categories = [
-    { label: "Furniture", value: 1 },
-    { label: "Clothing", value: 2 },
-    { label: "Cameras", value: 3 },
 
-  ]
-
-  const [category, setCategory] = useState(categories[0]);
 
   return (
+
+
+    <NavigationContainer theme={navigationTheme}>
+      {/* <AuthNavigator /> */}
+      <AppNavigator />
+    </NavigationContainer>
+
     // <WelcomeScreen />
     // <ViewImageScreen />
     // <ListingDetailsScreens />
@@ -46,7 +36,13 @@ export default function App() {
     //   <AppTextInput placeholder="Email" icon="email" />
     // </Screen>
     // <LoginScreen />
-    <ListingEditScreen />
+    // <ListingEditScreen />
+    // <Screen>
+    //   <ImageInput img={img} onChangeImage={img => setImg(img)} />
+    // </Screen>
+    // <Screen>
+    //   <ImageInputList imageUris={imgs} onAddImage={handleAdd} onRemoveImage={handleRemove} />
+    // </Screen>
   );
 }
 

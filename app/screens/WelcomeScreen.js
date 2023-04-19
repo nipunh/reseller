@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, ImageBackground,Image } from 'react-native'
 import AppText from '../components/AppText'
 import AppButton from '../components/AppButton'
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen({ navigation }) {
     return (
         <ImageBackground style={styles.background} 
             source={require('../assets/home.jpg')}>
@@ -13,8 +13,8 @@ export default function WelcomeScreen() {
                 <AppText style={{color : "white"}}>We buy what you don't need</AppText>
             </View> 
             <View style={styles.buttonContainer}>
-                <AppButton title="Login" onPress={()=>console.log("Hello")} />
-                <AppButton title="Register" onPress={()=>console.log("")} color="secondary" />
+                <AppButton title="Login" onPress={()=> navigation.navigate("Login")} />
+                <AppButton title="Register" onPress={()=> navigation.navigate("Register")} />
             </View>
         </ImageBackground>
     )
@@ -22,8 +22,9 @@ export default function WelcomeScreen() {
 
 const styles = StyleSheet.create({
     buttonContainer : {
-        padding: 20,
-        width : "100%"
+        padding: 5,
+        width : "100%",
+        marginBottom : 50
     },
     background : {
         flex:1,

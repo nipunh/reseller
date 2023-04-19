@@ -1,9 +1,9 @@
 import React from 'react'
 import { StyleSheet, Text, View, ImageBackground,Image } from 'react-native'
-import AppText from '../components/AppText/AppText'
-import AppButton from '../components/AppButton/AppButton'
+import AppText from '../components/AppText'
+import AppButton from '../components/AppButton'
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen({ navigation }) {
     return (
         <ImageBackground style={styles.background} 
             source={require('../assets/home.jpg')}>
@@ -13,8 +13,9 @@ export default function WelcomeScreen() {
                 <AppText style={{color : "white"}}>Exhange books with nearby readers</AppText>
             </View> 
             <View style={styles.buttonContainer}>
-                <AppButton title="Loginn" onPress={()=>console.log("Hello")} />
-                <AppButton title="Registerr" onPress={()=>console.log("")} color="secondary" />
+                <AppButton title="Login" onPress={()=> navigation.navigate("Login")} />
+                <AppButton title="Register" onPress={()=> navigation.navigate("Register")} />
+
             </View>
         </ImageBackground>
     )
@@ -22,9 +23,9 @@ export default function WelcomeScreen() {
 
 const styles = StyleSheet.create({
     buttonContainer : {
-        padding: 20,
-        width : "100%"
-        
+        padding: 5,
+        width : "100%",
+        marginBottom : 50
     },
     background : {
         flex:1,

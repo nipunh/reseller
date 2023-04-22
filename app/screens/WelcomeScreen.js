@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, View, ImageBackground,Image } from 'react-native'
 import AppText from '../components/AppText'
 import AppButton from '../components/AppButton'
+import routes from '../navigation/routes';
 
 export default function WelcomeScreen({ navigation }) {
     return (
@@ -13,8 +14,8 @@ export default function WelcomeScreen({ navigation }) {
                 <AppText style={{color : "white"}}>We buy what you don't need</AppText>
             </View> 
             <View style={styles.buttonContainer}>
-                <AppButton title="Login" onPress={()=> navigation.navigate("Login")} />
-                <AppButton title="Register" onPress={()=> navigation.navigate("Register")} />
+                <AppButton title="Login" onPress={()=> navigation.navigate(routes.LOGIN)} />
+                <AppButton title="Register" onPress={()=> navigation.navigate(routes.REGISTER)} />
             </View>
         </ImageBackground>
     )

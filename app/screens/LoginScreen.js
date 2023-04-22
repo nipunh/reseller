@@ -1,16 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Image, StyleSheet } from 'react-native'
 import Screen from '../components/Screen'
 import * as Yup from 'yup';
 import { AppFormField, SubmitButton, AppForm, ErrorMessage } from '../components/Forms';
+import routes from '../navigation/routes';
 
 const validationSchema = Yup.object().shape({
     email: Yup.string().required().email().label("Email"),
-    password: Yup.string().required().min(6).max(12).label("Password")
+    password: Yup.string().required().min(4).label("Password"),
+  });
 
-});
+export default function LoginScreen({navigation}) {
 
-export default function LoginScreen() {
+    const [loginFailed, setLoginFailed] = useState(false);
+
+    const defaultUser = {
+        email  :"nipunhedaoo@gmail.com",
+        password : "test123"
+    }
+    const handleSubmit = ({email, password}) => defaultUser.email ===  email && defaultUser.password === password ? navigation.navigate(routes.FEED): setLoginFailed(true); 
+    
     return (
         <Screen style={styles.container}>
             <Image
@@ -20,32 +29,38 @@ export default function LoginScreen() {
 
             <AppForm
                 initialValues={{ email: '', password: "" }}
-                onSubmit={values => console.log(values)}
+                onSubmit={handleSubmit}
                 validationSchema={validationSchema}
+                
             >
+                 <ErrorMessage
+                    error="Invalid email and/or password."
+                    visible={loginFailed}
+                />
 
                 <AppFormField
                     name="email"
                     placeholder="Email"
                     icon="email"
-                    autoCorrect="false"
+                    autoCorrect={false}
                     autoCapitalize="none"
                     keyboardType="email-address"
                     textContentType="emailAddress"
+                    
+                    
                 />
 
                 <AppFormField
                     name="password"
                     placeholder="Password"
                     icon="key"
-                    autoCorrect="false"
+                    autoCorrect={false}
                     autoCapitalize="none"
-                    keyboardType=""
                     secureTextEntry
                     textContentType="password"
                 />
 
-                <SubmitButton title="Login" />
+                <SubmitButton title="Login"/>
 
             </AppForm>
         </Screen>

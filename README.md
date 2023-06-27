@@ -4,8 +4,8 @@
 This mobile application, developed using React Native and Redux, enables users to engage in reselling activities by providing a platform for buying and selling various products. With features like user interaction, user registration, product listing, and purchasing capabilities, it offers a seamless experience for individuals interested in reselling items.
 </p>
 
-<img src="https://github.com/nipunh/reseller/assets/26524611/df39dd3c-b8fa-4ca8-b611-841b6414ee25" />
-<img src="https://github.com/nipunh/reseller/assets/26524611/8d7921f4-a88b-48b1-b432-523d8cc20e26" />
+![alt-text-1](<img src="https://github.com/nipunh/reseller/assets/26524611/df39dd3c-b8fa-4ca8-b611-841b6414ee25" />)
+![alt-text-2](<img src="https://github.com/nipunh/reseller/assets/26524611/8d7921f4-a88b-48b1-b432-523d8cc20e26" />)
 <img src="https://github.com/nipunh/reseller/assets/26524611/a73992bd-8761-4b63-b606-ba1a7f5016b7" />
 <img src="https://github.com/nipunh/reseller/assets/26524611/0eb1f738-0c4c-4736-b536-cf8f1444e58e" />
 <img src="https://github.com/nipunh/reseller/assets/26524611/fb60ceda-2368-4bc7-b0da-5b48f312502e" />

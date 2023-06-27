@@ -4,12 +4,13 @@
 This mobile application, developed using React Native and Redux, enables users to engage in reselling activities by providing a platform for buying and selling various products. With features like user interaction, user registration, product listing, and purchasing capabilities, it offers a seamless experience for individuals interested in reselling items.
 </p>
 
-![alt-text-1](https://github.com/nipunh/reseller/assets/26524611/06f689ce-99a4-495d-8699-53d813c7e019)
-![alt-text-2](https://github.com/nipunh/reseller/assets/26524611/7fadb8fa-ec84-488a-b552-a6af7dc84e04)
-<img src="https://github.com/nipunh/reseller/assets/26524611/a73992bd-8761-4b63-b606-ba1a7f5016b7" />
-<img src="https://github.com/nipunh/reseller/assets/26524611/0eb1f738-0c4c-4736-b536-cf8f1444e58e" />
-<img src="https://github.com/nipunh/reseller/assets/26524611/fb60ceda-2368-4bc7-b0da-5b48f312502e" />
-<img src="https://github.com/nipunh/reseller/assets/26524611/f9d165f4-6809-4dee-b1d6-a20778e62f31" />
+<img width="33%" src="https://github.com/nipunh/reseller/assets/26524611/045fa19c-3ce5-44c5-99f3-80eccbe5f0db" />
+<img width="33%" src="https://github.com/nipunh/reseller/assets/26524611/2812b311-76e6-499f-bc18-2f539d9ac326" />
+<img width="33%" src="https://github.com/nipunh/reseller/assets/26524611/8fd1ea05-28ed-4ab5-bd38-59440dcafef9" />
+<img width="33%" src="https://github.com/nipunh/reseller/assets/26524611/5d5540e1-540b-406a-9ac5-efe4b9dd388f" />
+<img width="33%" src="https://github.com/nipunh/reseller/assets/26524611/0ace1a5c-2767-405e-8383-b0245c6bd85c" />
+<img width="33%" src="https://github.com/nipunh/reseller/assets/26524611/ee5352c3-6f6b-4dd2-b048-49b96ba49f1a" />
+
 
 
 

@@ -16,8 +16,8 @@ export default function WelcomeScreen({ navigation }) {
             <View style={styles.buttonContainer}>
                 <AppButton title="Login" onPress={()=> navigation.navigate(routes.LOGIN)} />
                 <AppButton title="Register" onPress={()=> navigation.navigate(routes.REGISTER)} />
-                <AppButton title="Login" onPress={()=> navigation.navigate("Login")} />
-                <AppButton title="Register" onPress={()=> navigation.navigate("Register")} />
+                {/* <AppButton title="Login" onPress={()=> navigation.navigate("Login")} />
+                <AppButton title="Register" onPress={()=> navigation.navigate("Register")} /> */}
 
             </View>
         </ImageBackground>
